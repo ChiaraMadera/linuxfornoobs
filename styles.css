@@ -1,0 +1,227 @@
+/* =========================================
+   1. VARIABLES Y ROOT
+   ========================================= */
+:root {
+    --linux-orange: #F09400;
+    --linux-black: #000000;
+    --linux-white: #FFFFFF;
+    --linux-gray-light: #f8f9fa;
+    --linux-gray-border: #eeeeee;
+    --linux-gray-dark: #333333;
+    --text-dark: #212529;
+
+    --transition-base: all 0.3s ease;
+}
+
+/* =========================================
+   2. GENERAL / BASE
+   ========================================= */
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+    background-color: var(--linux-white);
+}
+
+/* =========================================
+   3. TIPOGRAFÍA Y UTILIDADES
+   ========================================= */
+h1, h2, h3, h4, h5 {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+}
+
+/* Clase utilitaria para aplicar la tipografía del título en otros elementos */
+.font-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.font-mono {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.text-orange {
+    color: var(--linux-orange);
+}
+
+/* Clase utilitaria para fondos de secciones alternas (reemplaza bg-light de Bootstrap) */
+.section-alt {
+    background-color: var(--linux-gray-light);
+}
+
+/* =========================================
+   4. COMPONENTES
+   ========================================= */
+
+/* --- Botones --- */
+.btn-orange {
+    background-color: var(--linux-orange);
+    color: var(--linux-white);
+    border: 2px solid var(--linux-orange);
+    border-radius: 8px;
+    padding: 12px 30px;
+    transition: var(--transition-base);
+}
+
+.btn-orange:hover {
+    background-color: transparent;
+    color: var(--linux-orange);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(240, 148, 0, 0.3);
+}
+
+/* --- Tarjetas (Cards) --- */
+.custom-card {
+    border: 2px solid var(--linux-gray-border);
+    border-radius: 15px;
+    transition: var(--transition-base);
+    background-color: var(--linux-white);
+}
+
+/* Modificador BEM: tarjeta con borde naranja destacado (usado en Distribuciones) */
+.custom-card--highlighted {
+    border-color: var(--linux-orange);
+}
+
+.custom-card:hover {
+    border-color: var(--linux-orange);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.custom-card i.bi {
+    color: var(--linux-orange);
+    font-size: 2rem;
+}
+
+/* --- Iconos de Tarjetas --- */
+.card-img-icon {
+    object-fit: contain;
+    display: block;
+    transition: var(--transition-base);
+}
+
+.custom-card:hover .card-img-icon {
+    transform: scale(1.1);
+}
+
+.icon-md {
+    width: 48px;
+    height: 48px;
+}
+
+.icon-lg {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+/* --- Elementos de Apoyo --- */
+.info-box {
+    background-color: var(--linux-gray-dark);
+    color: var(--linux-white);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 8px solid var(--linux-orange);
+}
+
+.placeholder-img {
+    background: var(--linux-black);
+    color: var(--linux-orange);
+}
+
+/* =========================================
+   5. LAYOUT Y SECCIONES
+   ========================================= */
+
+/* --- Navegación --- */
+.navbar {
+    background-color: var(--linux-white);
+}
+
+.navbar-brand {
+    color: var(--linux-black);
+    font-size: 1.25rem;
+}
+
+.navbar-brand:hover {
+    color: var(--linux-black);
+}
+
+.nav-logo {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    transition: var(--transition-base);
+}
+
+.navbar-brand:hover .nav-logo {
+    transform: rotate(-10deg);
+}
+
+/* Especificidad aumentada para sobreescribir Bootstrap sin !important */
+.navbar .nav-link {
+    color: var(--linux-black);
+    font-size: 0.9rem;
+    margin: 0 10px;
+    transition: var(--transition-base);
+}
+
+.navbar .nav-link:hover {
+    color: var(--linux-orange);
+}
+
+/* --- Hero --- */
+#hero {
+    background: linear-gradient(135deg, var(--linux-white) 0%, #f2f2f2 100%);
+    border-bottom: 5px solid var(--linux-orange);
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-img {
+    filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.1));
+    transition: var(--transition-base);
+}
+
+.hero-img:hover {
+    transform: scale(1.05);
+}
+
+/* --- Definición --- */
+.linus-img-wrapper {
+    height: 250px;
+}
+
+/* --- Entornos de Escritorio --- */
+.desktop-env-list li {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+/* --- Video --- */
+.video-wrapper {
+    max-width: 800px;
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: var(--linux-orange);
+    color: var(--linux-white);
+}
+
+/* =========================================
+   6. RESPONSIVIDAD
+   ========================================= */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2.2rem;
+    }
+}

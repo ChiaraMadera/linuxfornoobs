@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Linux For Noobs</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600&display=swap"
+            rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg sticky-top shadow-sm" aria-label="Navegación principal">
+            <div class="container">
+                <a class="navbar-brand font-title" href="#hero">
+                    <img src="./icons/linux.svg" alt="Logo Tux" class="nav-logo me-2">
+                    <span class="text-orange">Linux</span> For Noobs
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link font-mono" href="#hero">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link font-mono" href="#definicion">Definición</a></li>
+                        <li class="nav-item"><a class="nav-link font-mono" href="#ventajas">¿Por qué Linux?</a></li>
+                        <li class="nav-item"><a class="nav-link font-mono" href="#distros">Distribuciones</a></li>
+                        <li class="nav-item"><a class="nav-link font-mono" href="#escritorios">D.E</a></li>
+                        <li class="nav-item"><a class="nav-link font-mono" href="#aprender">Aprender Más</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <!-- Hero -->
+            <section id="hero" class="py-5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <p class="text-muted mb-1">El futuro es Open Source</p>
+                            <h1 class="display-4 text-orange">Libre, seguro y bajo tu control</h1>
+                            <p class="lead">Olvidate de las limitaciones. Experimentá la velocidad y seguridad del sistema
+                                que mueve al mundo.</p>
+                            <a href="#ventajas" class="btn btn-orange font-title">Empezar Ahora</a>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <img src="./imagenes/pinguino_linux.png" alt="Tux, mascota de Linux"
+                                class="img-fluid hero-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Definición -->
+            <section id="definicion" class="py-5 section-alt">
+                <div class="container">
+                    <h2 class="text-center mb-5">¿Qué es Linux?</h2>
+                    <div class="row align-items-center">
+                        <div class="col-lg-7">
+                            <p>Linux es un sistema operativo de código abierto basado en Unix, creado por Linus Torvalds en
+                                1991. Es el núcleo (kernel) que gestiona los recursos del hardware y permite que los
+                                programas se ejecuten.</p>
+                            <div class="info-box mt-4">
+                                <p class="mb-0 small">
+                                    <i class="bi bi-lightbulb-fill text-warning me-2"></i>
+                                    <strong>Dato clave:</strong> El kernel es el corazón del sistema que comunica el
+                                    hardware con el software. El sistema operativo completo incluye el kernel más
+                                    herramientas, aplicaciones y entornos gráficos. Cuando hablamos de "Linux", técnicamente
+                                    nos referimos al kernel, pero popularmente al sistema operativo completo (GNU/Linux).
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="placeholder-img rounded shadow d-flex align-items-center justify-content-center font-mono fw-bold linus-img-wrapper">
+                                <img src="./imagenes/linus_torval.png"
+                                    alt="Linus Torvalds, creador del kernel Linux" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ¿Por qué Linux? -->
+            <section id="ventajas" class="py-5">
+                <div class="container">
+                    <h2 class="text-center mb-5">¿Por qué Linux?</h2>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="custom-card p-4 h-100">
+                                <h4 class="mb-3"><i class="bi bi-download me-2"></i> Software Libre</h4>
+                                <p class="text-muted mb-0">Código abierto y completamente gratuito. Libertad total para
+                                    usar, estudiar, modificar y distribuir.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="custom-card p-4 h-100">
+                                <h4 class="mb-3"><i class="bi bi-shield-lock me-2"></i> Seguridad</h4>
+                                <p class="text-muted mb-0">Arquitectura robusta con permisos estrictos. Menos vulnerable a
+                                    virus y malware que otros sistemas.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="custom-card p-4 h-100">
+                                <h4 class="mb-3"><i class="bi bi-palette me-2"></i> Personalización</h4>
+                                <p class="text-muted mb-0">Personaliza cada aspecto de tu sistema. Elige tu entorno de
+                                    escritorio, temas, y configuraciones.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="custom-card p-4 h-100">
+                                <h4 class="mb-3"><i class="bi bi-speedometer2 me-2"></i> Rendimiento</h4>
+                                <p class="text-muted mb-0">Optimizado y eficiente. Funciona excelente incluso en hardware
+                                    antiguo o de recursos limitados.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Distribuciones -->
+            <section id="distros" class="py-5 section-alt text-center">
+                <div class="container">
+                    <h2 class="mb-5">Distribuciones</h2>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="custom-card custom-card--highlighted p-4 h-100 text-start">
+                                <img src="./icons/ubuntu.svg" alt="Logo Ubuntu" class="card-img-icon icon-md mb-3">
+                                <h4>Ubuntu</h4>
+                                <p class="text-muted small">La distribución más popular para principiantes. Fácil de usar,
+                                    gran comunidad y excelente soporte.</p>
+                                <a href="https://ubuntu.com/" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-orange btn-sm font-title">Sitio Oficial</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="custom-card custom-card--highlighted p-4 h-100 text-start">
+                                <img src="./icons/linuxmint.svg" alt="Logo Linux Mint" class="card-img-icon icon-md mb-3">
+                                <h4>Linux Mint</h4>
+                                <p class="text-muted small">Elegante y amigable. Basada en Ubuntu pero con un enfoque en la
+                                    simplicidad y la familiaridad.</p>
+                                <a href="https://linuxmint.com/" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-orange btn-sm font-title">Sitio Oficial</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="custom-card custom-card--highlighted p-4 h-100 text-start">
+                                <img src="./icons/fedora.svg" alt="Logo Fedora" class="card-img-icon icon-md mb-3">
+                                <h4>Fedora</h4>
+                                <p class="text-muted small">Innovadora y moderna. Patrocinada por Red Hat, siempre con las
+                                    últimas tecnologías.</p>
+                                <a href="https://getfedora.org/" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-orange btn-sm font-title">Sitio Oficial</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="custom-card custom-card--highlighted p-4 h-100 text-start">
+                                <img src="./icons/zorin.svg" alt="Logo ZorinOS" class="card-img-icon icon-md mb-3">
+                                <h4>ZorinOS</h4>
+                                <p class="text-muted small">Diseñada para usuarios que migran de Windows o Mac. Interfaz
+                                    familiar y elegante.</p>
+                                <a href="https://zorinos.com/" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-orange btn-sm font-title">Sitio Oficial</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Entornos de Escritorio -->
+            <section id="escritorios" class="py-5">
+                <div class="container text-center">
+                    <h2 class="mb-2">Entornos de Escritorio</h2>
+                    <p class="text-muted mb-5">Un entorno de escritorio es la interfaz gráfica que controla cómo se ve y se
+                        siente tu sistema. En Linux, puedes elegir el que más te guste.</p>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="custom-card p-4 section-alt h-100">
+                                <img src="./icons/gnome.svg" alt="Logo GNOME" class="card-img-icon icon-lg mb-3">
+                                <h5>GNOME</h5>
+                                <p class="small fw-bold text-orange">Simple y Moderno</p>
+                                <ul class="list-unstyled text-start small desktop-env-list">
+                                    <li>• Interfaz minimalista y elegante</li>
+                                    <li>• Gestos táctiles y fluidos</li>
+                                    <li>• Extensiones para personalizar</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="custom-card p-4 section-alt h-100">
+                                <img src="./icons/kde.svg" alt="Logo KDE Plasma" class="card-img-icon icon-lg mb-3">
+                                <h5>KDE Plasma</h5>
+                                <p class="small fw-bold text-orange">Altamente personalizable</p>
+                                <ul class="list-unstyled text-start small desktop-env-list">
+                                    <li>• Personalización ilimitada</li>
+                                    <li>• Potente y con muchas características</li>
+                                    <li>• Apariencia similar a Windows</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="custom-card p-4 section-alt h-100">
+                                <img src="./icons/xfce.svg" alt="Logo XFCE" class="card-img-icon icon-lg mb-3">
+                                <h5>XFCE</h5>
+                                <p class="small fw-bold text-orange">Ligero y Rápido</p>
+                                <ul class="list-unstyled text-start small desktop-env-list">
+                                    <li>• Consume pocos recursos</li>
+                                    <li>• Ideal para hardware antiguo</li>
+                                    <li>• Estable y confiable</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Aprender Más -->
+            <section id="aprender" class="py-5 section-alt">
+                <div class="container text-center">
+                    <h2 class="mb-4">Aprende Más</h2>
+                    <p class="mb-5">Explora más sobre Linux y sus distribuciones</p>
+                    <div class="ratio ratio-16x9 mx-auto shadow-lg rounded video-wrapper">
+                        <iframe
+                            src="https://www.youtube.com/embed/L906Kti3gzE"
+                            title="Video introductorio sobre Linux y sus distribuciones"
+                            frameborder="0"
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer py-4">
+            <div class="container text-center">
+                <p class="mb-0 font-title">©2026 Linux For Noobs</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
